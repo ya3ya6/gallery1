@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #e8f4f8;
+}
+
+.main{
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 14px;
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  display: none;
+}
+
+.column{
+    display: flex;
+}
